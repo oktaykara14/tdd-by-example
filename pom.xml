@@ -23,6 +23,11 @@
             <name>John Thompson</name>
             <email>john@springframework.guru</email>
         </developer>
+        <developer>
+            <id>oktay</id>
+            <name>Oktay Kara</name>
+            <email>oktaykara14@gmail.com</email>
+        </developer>
     </developers>
 
     <inceptionYear>2018</inceptionYear>
@@ -30,17 +35,17 @@
     <licenses>
         <license>
             <name>The Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>11</java.version>
+        <java.version>20</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <junit-platform.version>5.3.1</junit-platform.version>
+        <junit-platform.version>5.10.0</junit-platform.version>
     </properties>
 
     <dependencies>
@@ -63,26 +68,20 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
+                <version>3.11.0</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.0</version>
+                <version>3.1.2</version>
                 <configuration>
-                    <argLine>
-                        --illegal-access=permit
-                    </argLine>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
-                <version>2.22.0</version>
+                <version>3.1.2</version>
                 <configuration>
-                    <argLine>
-                        --illegal-access=permit
-                    </argLine>
                 </configuration>
             </plugin>
         </plugins>
