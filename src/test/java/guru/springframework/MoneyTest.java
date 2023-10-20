@@ -10,7 +10,6 @@ public class MoneyTest {
         Assertions.assertEquals(Money.dollar(10),five.times(2));
         Assertions.assertEquals(Money.dollar(15),five.times(3));
 
-
         Money fiveF = Money.franc(5);
         Assertions.assertEquals(Money.franc(10),fiveF.times(2));
         Assertions.assertEquals(Money.franc(15),fiveF.times(3));
